@@ -1,5 +1,3 @@
-# retailer-insights-testing
-
 # Retailer Insights Test Repository
 
 ## Purpose
