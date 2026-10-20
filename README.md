@@ -25,6 +25,7 @@ The goal is to reduce duplicate testing effort, improve coverage consistency, an
 
 Source PO validation, lineage investigations, and planned E2E coverage from acquisition through SOQ.
 
+- **Validation lifecycle:** `docs/business-validation-framework.md`
 - **Lineage guide:** `docs/walmart-po-lineage.md`
 - **Ecosystem context:** `docs/ecosystem-overview.md`
 - **Source rule catalog:** `validation/rules/rules.json` (run `python scripts/validate.py`)
