@@ -34,6 +34,8 @@ Source PO validation, lineage investigations, and planned E2E coverage from acqu
 ### Dynamic On Hand
 Business validation and regression testing for inventory calculations, beginning inventory logic, and downstream impacts.
 
+- **Completed example package:** [business-validation/features/dynamic-onhand-inventory-logic/](business-validation/features/dynamic-onhand-inventory-logic/feature-overview.md)
+
 ### STM (Truck-to-Shelf)
 Validation of STM logic, calculations, and integration requirements.
 
@@ -51,6 +53,7 @@ Regression validation following retailer data reprocessing activities.
 ## Repository Structure
 
 ```text
+business-validation/  Feature validation packages (requirements → sign-off)
 docs/                 Ecosystem, lineage, traceability, scope
 test-cases/           Documented test scenarios and outcomes
 fixtures/             Source-shaped JSON samples (Walmart PO)

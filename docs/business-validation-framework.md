@@ -17,6 +17,7 @@ Related references:
 - Layer-specific focus: `docs/testing-by-layer.md`
 - Requirement-to-evidence mapping: `docs/traceability-matrix.md`
 - Investigation write-ups: `investigations/_template-lineage.md`
+- Feature packages (example): `business-validation/features/dynamic-onhand-inventory-logic/`
 
 ---
 
