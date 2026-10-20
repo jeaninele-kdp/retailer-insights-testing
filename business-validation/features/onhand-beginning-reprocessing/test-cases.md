@@ -19,6 +19,7 @@
 - **30 records:** 10 High, 10 Med, 10 Low (`BusDate >= 2025-09-01`).
 - **Pass:** `ValidationResult = PASS`, `Expected_OnHandBeginning = OnHand_Begining`.
 - `ChangeDetected` is validated via regression (action 3) and branch-wave sample SQL where backup joins apply; the 0925 velocity script is current-only.
+- **Evidence:** [velocity-samples.csv](../../../evidence/onhand-beginning-reprocessing/kroger-0925/velocity-samples.csv)
 
 ## TC-OHB-KRO-02 — execution notes
 

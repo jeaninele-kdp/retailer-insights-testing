@@ -2,9 +2,9 @@
 
 | Requirement | Business rule | Scenario | Test case | Evidence |
 |-------------|---------------|----------|-----------|----------|
-| REQ-OHB-001 | BR-OHB-001, BR-OHB-004 | OHB-KRO-0925-01 | TC-OHB-KRO-0925-01 | [kroger/0925/onhand-beginning-population-validation.sql](sql/kroger/0925/onhand-beginning-population-validation.sql) |
-| REQ-OHB-003 | BR-OHB-004 | OHB-KRO-0925-02 | TC-OHB-KRO-0925-02 | [kroger/0925/velocity-sample-evidence.sql](sql/kroger/0925/velocity-sample-evidence.sql) |
-| REQ-OHB-005 | BR-OHB-003 | OHB-KRO-0925-03 | TC-OHB-KRO-0925-03 | [kroger/0925/regression-field-stability.sql](sql/kroger/0925/regression-field-stability.sql) |
+| REQ-OHB-001 | BR-OHB-001, BR-OHB-004 | OHB-KRO-0925-01 | TC-OHB-KRO-0925-01 | [SQL](sql/kroger/0925/onhand-beginning-population-validation.sql) · [CSV](../../../evidence/onhand-beginning-reprocessing/kroger-0925/population-by-velocity.csv) |
+| REQ-OHB-003 | BR-OHB-004 | OHB-KRO-0925-02 | TC-OHB-KRO-0925-02 | [SQL](sql/kroger/0925/velocity-sample-evidence.sql) · [CSV](../../../evidence/onhand-beginning-reprocessing/kroger-0925/velocity-samples.csv) |
+| REQ-OHB-005 | BR-OHB-003 | OHB-KRO-0925-03 | TC-OHB-KRO-0925-03 | [SQL](sql/kroger/0925/regression-field-stability.sql) · [CSV](../../../evidence/onhand-beginning-reprocessing/kroger-0925/regression-field-stability.csv) |
 | REQ-OHB-001 | BR-OHB-001 | OHB-KRO-01 | TC-OHB-KRO-01 | [kroger/onhand-beginning-population-validation.sql](sql/kroger/onhand-beginning-population-validation.sql) |
 | REQ-OHB-001 | BR-OHB-001 | OHB-ALB-01 | TC-OHB-ALB-01 | [albertsons/onhand-beginning-population-validation.sql](sql/albertsons/onhand-beginning-population-validation.sql) |
 | REQ-OHB-001 | BR-OHB-001 | OHB-TGT-01 | TC-OHB-TGT-01 | [target/onhand-beginning-population-validation.sql](sql/target/onhand-beginning-population-validation.sql) |

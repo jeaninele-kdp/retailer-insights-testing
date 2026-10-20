@@ -56,8 +56,15 @@ END
 
 ## Evidence
 
-- Jira CSV attachments (Kroger population / velocity exports) → `evidence/onhand-beginning-reprocessing/`
-- SQL provenance: `Kroger0925.sql` (aka `KrogerOnHandBeginning0925.sql`), `KrogerVelocitySamples0925.sql`, `Kroger0925Regression.sql`
+**Repository exports:** [evidence/onhand-beginning-reprocessing/kroger-0925/](../../../evidence/onhand-beginning-reprocessing/kroger-0925/README.md)
+
+| Export | File |
+|--------|------|
+| Population by velocity (0 mismatches) | [population-by-velocity.csv](../../../evidence/onhand-beginning-reprocessing/kroger-0925/population-by-velocity.csv) |
+| 30 velocity samples (all PASS) | [velocity-samples.csv](../../../evidence/onhand-beginning-reprocessing/kroger-0925/velocity-samples.csv) |
+| Regression changed vs unchanged | [regression-field-stability.csv](../../../evidence/onhand-beginning-reprocessing/kroger-0925/regression-field-stability.csv) |
+
+SQL provenance: `Kroger0925.sql` (aka `KrogerOnHandBeginning0925.sql`), `KrogerVelocitySamples0925.sql`, `Kroger0925Regression.sql`
 
 ## Relation to branch reprocessing package
 

@@ -46,7 +46,7 @@ None — see `defects.md`.
 
 ## Risks / follow-ups
 
-- Archive Jira CSV attachments into `evidence/onhand-beginning-reprocessing/` for long-term retention.
+- Kroger 0925 CSV evidence: [evidence/onhand-beginning-reprocessing/kroger-0925/](../../../evidence/onhand-beginning-reprocessing/kroger-0925/README.md).
 - Re-run population scripts after any additional retailer reprocessing waves.
 
 ## Sign-off
