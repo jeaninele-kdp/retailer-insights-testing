@@ -4,10 +4,9 @@
 
 This document captures the standard business testing and validation process used within Retailer Insights initiatives, including:
 
-- Walmart Purchase Orders
 - Retailer Data
 - Data Products
-- Perfect Order forecasting
+- Perfect Order 
 - Downstream reporting solutions
 
 Treat this framework as the **authoritative testing lifecycle** for business validation activities.
@@ -33,7 +32,6 @@ The objective is to validate:
 - Business logic
 - End-to-end data lineage
 - Edge case handling
-- Forecast impacts
 - Reporting impacts
 - Consumer impacts
 
@@ -150,31 +148,11 @@ Examples:
 
 - Scenario matrix
 
-#### Step 5: Create traceability matrix
-
-Each requirement must map to validation coverage.
-
-```text
-Requirement
-      ↓
-Business Rule
-      ↓
-Scenario
-      ↓
-Test Case
-      ↓
-Evidence
-```
-
-**Objective:** Ensure every approved business rule is validated.
-
-**Deliverable:** Traceability matrix (see `docs/traceability-matrix.md`).
-
 ---
 
 ### Phase 3: Business review
 
-#### Step 6: Present in Tech Connect
+#### Step 5: Present in Tech Connect
 
 **Objective:** Review logic and scenarios with:
 
@@ -194,7 +172,7 @@ Evidence
 - Feedback log
 - Updated scenarios
 
-#### Step 7: Refine logic
+#### Step 6: Refine logic
 
 **Objective:** Incorporate business feedback.
 
@@ -211,13 +189,11 @@ This cycle repeats until alignment is reached.
 
 - Approved validation coverage
 
-#### Step 8: Business sign-off
+#### Step 7: Business sign-off
 
 **Objective:** Obtain formal approval on:
 
-- Business logic
-- Business rules
-- Validation scenarios
+- Logic, Rules, Scenarios
 
 **Deliverable:** Approved business logic
 
@@ -227,7 +203,7 @@ No implementation should begin without agreed requirements.
 
 ### Phase 4: Development
 
-#### Step 9: Development and engineering validation
+#### Step 8: Development and engineering validation
 
 Developers implement approved requirements.
 
@@ -247,7 +223,7 @@ Developers implement approved requirements.
 
 ### Phase 5: Test preparation
 
-#### Step 10: Test data strategy
+#### Step 9: Test data strategy
 
 Define validation datasets.
 
@@ -262,23 +238,11 @@ Coverage should include:
 
 **Deliverable:** Testing dataset plan
 
-#### Step 11: Pre-validation checklist
-
-Before execution, verify:
-
-- Deployment complete
-- UC4 jobs completed
-- Snowflake refresh complete
-- Required data available
-- Downstream datasets refreshed
-
-**Deliverable:** Validation readiness checklist
-
 ---
 
 ### Phase 6: Business validation
 
-#### Step 12: Execute tests
+#### Step 10: Execute tests
 
 Perform business validation testing.
 
@@ -300,7 +264,7 @@ Validation may include:
 
 **Deliverable:** Test execution results
 
-#### Step 13: Defect investigation and root cause analysis
+#### Step 11: Defect investigation and root cause analysis
 
 **Objective**
 
@@ -339,7 +303,7 @@ For each defect:
    - Root cause hypothesis
    - Business impact
 
-#### Step 14: Defect resolution validation
+#### Step 12: Defect resolution validation
 
 After a fix is implemented:
 
@@ -354,7 +318,7 @@ After a fix is implemented:
 
 ### Phase 7: Validation sign-off
 
-#### Step 15: Validation summary
+#### Step 13: Validation summary
 
 Create final validation package.
 
