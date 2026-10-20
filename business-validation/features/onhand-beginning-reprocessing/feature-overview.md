@@ -23,7 +23,8 @@ This package documents independent business validation: population rule checks, 
 
 | Retailer | NationalChainID | Branches | Velocity categories validated |
 |----------|-----------------|----------|------------------------------|
-| Kroger | `0001000889` | 1020 Northlake, 1077 Columbus, 1115 Irving Century | Low, Medium, High |
+| Kroger | `0001000889` | **0925 wave:** chain-wide, `BusDate >= 2025-09-01` — [kroger-0925-reprocessing.md](kroger-0925-reprocessing.md) | Low, Medium, High |
+| Kroger (branch wave) | `0001000889` | 1020, 1077, 1115 | Low, Medium, High |
 | Albertsons | `0001001169` | 1020 Northlake, 1115 Irving Century | Low, Medium, High |
 | Target | `0001000312` | 1020, 1077, 1115 | Low only |
 

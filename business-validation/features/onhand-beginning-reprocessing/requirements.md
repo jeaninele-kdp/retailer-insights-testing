@@ -9,6 +9,7 @@
 | REQ-OHB-005 | `SalesQty`, `Max_ShelfCapacityQty`, `DeliveredQtyAdj` substantially unchanged vs backup | Kroger, Albertsons |
 | REQ-OHB-006 | Fact inventory impacts understood (`Fact_DailyInventory` vs backup) | All |
 | REQ-OHB-007 | Document exceptions, counts by branch/velocity, and readiness recommendation | All |
+| REQ-OHB-008 | Kroger chain-wide reprocessing from **2025-09-01** per [kroger-0925-reprocessing.md](kroger-0925-reprocessing.md) | Kroger |
 
 ## Validation objectives
 

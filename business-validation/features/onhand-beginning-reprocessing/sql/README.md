@@ -12,7 +12,21 @@ Run in Snowflake **RETAILER_QA**. Each retailer folder contains up to three scri
 | `RETAILER_QA.INVENTORY."Fact_DailyInventory_bkp_08Oct26_V2"` | Fact backup |
 | `RETAILER_QA.TECHNICAL."V_Load_Stg_InventoryAdjustmentsAuto"` | Branch / customer mapping |
 
-## Kroger (`0001000889`)
+## Kroger (`0001000889`) — September 2025 onward (chain-wide)
+
+| File | Action | Description |
+|------|--------|-------------|
+| [0925/onhand-beginning-population-validation.sql](kroger/0925/onhand-beginning-population-validation.sql) | 1 | `BusDate >= 2025-09-01`; counts & mismatches by velocity |
+| [0925/velocity-sample-evidence.sql](kroger/0925/velocity-sample-evidence.sql) | 2 | 30 samples (10 per velocity) |
+| [0925/regression-field-stability.sql](kroger/0925/regression-field-stability.sql) | 3 | Backup compare from 2025-09-01 |
+
+**Provenance:** `Kroger0925.sql` / `KrogerOnHandBeginning0925.sql`, `KrogerVelocitySamples0925.sql`, `Kroger0925Regression.sql`
+
+Doc: [kroger-0925-reprocessing.md](../kroger-0925-reprocessing.md)
+
+---
+
+## Kroger — branch reprocessing wave
 
 | File | Action | Description |
 |------|--------|-------------|

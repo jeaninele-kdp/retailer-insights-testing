@@ -2,7 +2,21 @@
 
 SQL index: [sql/README.md](sql/README.md).
 
-## Kroger (`0001000889`)
+## Kroger — September 2025 onward (`0001000889`)
+
+Chain-wide; `BusDate >= 2025-09-01`. Detail: [kroger-0925-reprocessing.md](kroger-0925-reprocessing.md).
+
+| ID | Action | Description | Result summary |
+|----|--------|-------------|----------------|
+| OHB-KRO-0925-01 | Population rule | Counts by velocity / BusDate; mismatch samples | PASS — 0 rule mismatches |
+| OHB-KRO-0925-02 | Velocity samples | 10 High + 10 Med + 10 Low (30 rows) | PASS |
+| OHB-KRO-0925-03 | Regression | vs backup, `BusDate >= 2025-09-01` | PASS — non-OHB fields stable |
+
+**SQL:** `sql/kroger/0925/`
+
+---
+
+## Kroger — branch reprocessing (`0001000889`)
 
 | ID | Action | Description | Branches | Result summary |
 |----|--------|-------------|----------|----------------|

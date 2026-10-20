@@ -43,4 +43,28 @@ Reprocessing must **not** materially alter:
 - `Max_ShelfCapacityQty`
 - `DeliveredQtyAdj`
 
-Compare current staging to `Stg_OnhandCalcFromDelvry_Static_BKP_08Oct26` on keys: `CustomerNumber`, `EAN11`, `BusDate`, `seq_num`.
+Compare current staging to `Stg_OnhandCalcFromDelvry_Static_BKP_08Oct26` on keys: `CustomerNumber`, `EAN11`, `BusDate`, `seq_num` (and `seq_num` where used in branch-wave scripts).
+
+---
+
+## BR-OHB-004 — Kroger 0925 population check (chain-wide)
+
+**Scope:** `NationalChainID = '0001000889'`, `BusDate >= '2025-09-01'`.
+
+**Population validation expression (staging SQL):**
+
+```sql
+OnHand_Begining IS DISTINCT FROM ROUND(Max_ShelfCapacityQty * 0.5)
+```
+
+**Sample expected value:**
+
+```sql
+CASE
+    WHEN MOD(Max_ShelfCapacityQty, 2) <> 0
+        THEN ROUND(Max_ShelfCapacityQty * 0.5)
+    ELSE Max_ShelfCapacityQty * 0.5
+END
+```
+
+Mismatch count must be **0** for sign-off. See [kroger-0925-reprocessing.md](kroger-0925-reprocessing.md).
