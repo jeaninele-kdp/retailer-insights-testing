@@ -36,7 +36,7 @@ Confirm that:
 | Traceability | `traceability-matrix.md` |
 | Defects | `defects.md` |
 | Sign-off | `validation-summary.md` |
-| SQL (linked later) | `sql/` |
+| SQL | `sql/` (DOH-01–DOH-05 validation scripts) |
 
 ## Scope notes
 

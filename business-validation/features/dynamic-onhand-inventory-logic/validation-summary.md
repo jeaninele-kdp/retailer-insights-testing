@@ -51,7 +51,8 @@ See `defects.md`.
 
 ## Risks and limitations
 
-- SQL scripts and exports are not yet stored in this repository; link them under `sql/` when available.
+- Scenario SQL is stored under `sql/` (DOH-01–DOH-05). Result exports (screenshots, CSV) can be added under repo `evidence/` when archived.
+- Regression SQL for SOQ, alerts, and Perfect Order downstream is not yet in the repository.
 - DOH-01 retailer list and September 2026 date window define the primary no-feedback sample; extend matrices if new retailers or dates are in scope for regression.
 
 ## Supporting evidence
@@ -63,7 +64,7 @@ See `defects.md`.
 | Scenarios | `scenarios.md` |
 | Test cases | `test-cases.md` |
 | Traceability | `traceability-matrix.md` |
-| SQL (future) | `sql/README.md` |
+| SQL | `sql/` (doh-01 … doh-05) |
 
 ## Sign-off
 

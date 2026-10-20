@@ -1,14 +1,14 @@
 # Test cases — Dynamic On-Hand Inventory Logic
 
-Test cases map scenarios to executable validation steps. SQL assets will be linked under `sql/` when provided.
+Test cases map scenarios to executable validation steps. SQL scripts live under `sql/`.
 
-| Test case ID | Scenario | Business rules | SQL (placeholder) | Status |
-|--------------|----------|----------------|-------------------|--------|
-| TC-DOH-01 | DOH-01 | BR-001 | `sql/` — no-feedback population | Passed |
-| TC-DOH-02 | DOH-02 | BR-002 | `sql/` — OOS feedback | Passed |
-| TC-DOH-03 | DOH-03 | BR-003 | `sql/` — 50% shelf feedback | Passed |
-| TC-DOH-04 | DOH-04 | BR-004 | `sql/` — 100% shelf feedback | Passed |
-| TC-DOH-05 | DOH-05 | BR-005 | `sql/` — 150% shelf feedback | Passed |
+| Test case ID | Scenario | Business rules | SQL | Status |
+|--------------|----------|----------------|-----|--------|
+| TC-DOH-01 | DOH-01 | BR-001 | [doh-01-no-feedback.sql](sql/doh-01-no-feedback.sql) | Passed |
+| TC-DOH-02 | DOH-02 | BR-002 | [doh-02-oos-feedback.sql](sql/doh-02-oos-feedback.sql) | Passed |
+| TC-DOH-03 | DOH-03 | BR-003 | [doh-03-half-shelf-feedback.sql](sql/doh-03-half-shelf-feedback.sql) | Passed |
+| TC-DOH-04 | DOH-04 | BR-004 | [doh-04-full-shelf-feedback.sql](sql/doh-04-full-shelf-feedback.sql) | Passed |
+| TC-DOH-05 | DOH-05 | BR-005 | [doh-05-full-shelf-plus-feedback.sql](sql/doh-05-full-shelf-plus-feedback.sql) | Passed |
 
 ---
 
@@ -21,7 +21,7 @@ Test cases map scenarios to executable validation steps. SQL assets will be link
   2. Compare `Dynamic_OnHandQty` to `OnHand_Ending` by store / item / date grain used in validation.
 - **Expected:** `Dynamic_OnHandQty = OnHand_Ending` for all in-scope records
 - **Actual:** PASS (Dynamic = OHE)
-- **Evidence:** Link SQL and result export in `sql/` when added
+- **Evidence:** [sql/doh-01-no-feedback.sql](sql/doh-01-no-feedback.sql)
 
 ---
 

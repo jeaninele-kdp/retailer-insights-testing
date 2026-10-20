@@ -4,11 +4,11 @@ Maps **requirement → business rule → scenario → test case → evidence** p
 
 | Requirement | Business rule | Scenario | Test case | Evidence |
 |-------------|---------------|----------|-----------|----------|
-| REQ-001 | BR-001 | DOH-01 | TC-DOH-01 | `sql/` (pending) — no-feedback reconciliation |
-| REQ-001 | BR-002 | DOH-02 | TC-DOH-02 | `sql/` (pending) — OOS override + dynamic roll |
-| REQ-001 | BR-003 | DOH-03 | TC-DOH-03 | `sql/` (pending) — 50% shelf |
-| REQ-001 | BR-004 | DOH-04 | TC-DOH-04 | `sql/` (pending) — 100% shelf |
-| REQ-001 | BR-005 | DOH-05 | TC-DOH-05 | `sql/` (pending) — 150% shelf |
+| REQ-001 | BR-001 | DOH-01 | TC-DOH-01 | [sql/doh-01-no-feedback.sql](sql/doh-01-no-feedback.sql) |
+| REQ-001 | BR-002 | DOH-02 | TC-DOH-02 | [sql/doh-02-oos-feedback.sql](sql/doh-02-oos-feedback.sql) |
+| REQ-001 | BR-003 | DOH-03 | TC-DOH-03 | [sql/doh-03-half-shelf-feedback.sql](sql/doh-03-half-shelf-feedback.sql) |
+| REQ-001 | BR-004 | DOH-04 | TC-DOH-04 | [sql/doh-04-full-shelf-feedback.sql](sql/doh-04-full-shelf-feedback.sql) |
+| REQ-001 | BR-005 | DOH-05 | TC-DOH-05 | [sql/doh-05-full-shelf-plus-feedback.sql](sql/doh-05-full-shelf-plus-feedback.sql) |
 | REQ-002 | BR-002–BR-005 | DOH-02–DOH-05 | TC-DOH-02–TC-DOH-05 | Dynamic independence checks in scenario results |
 | REQ-003 | BR-001 | DOH-01 | TC-DOH-01 | PASS (Dynamic = OHE) |
 | REQ-004 | BR-002–BR-005 | DOH-02–DOH-05 | TC-DOH-02–TC-DOH-05 | OnHand_Result PASS where applicable |

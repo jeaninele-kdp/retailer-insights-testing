@@ -1,5 +1,7 @@
 # Scenarios — Dynamic On-Hand Inventory Logic
 
+SQL for each scenario: see [sql/README.md](sql/README.md).
+
 | Scenario ID | Title | Population | Expected result | Behavior | Validation outcome |
 |-------------|-------|------------|-----------------|----------|-------------------|
 | DOH-01 | No feedback | `Feedback_ShelfCapacity IS NULL` | `Dynamic_OnHandQty` equals `OnHand_Ending` | No feedback | PASS (Dynamic = OHE) |
