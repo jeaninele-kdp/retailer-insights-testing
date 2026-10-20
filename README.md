@@ -48,6 +48,8 @@ Validation of display metrics, retailer submissions, and related calculations.
 ### Retailer Reprocessing
 Regression validation following retailer data reprocessing activities.
 
+- **OnHandBeginning reprocessing (Kroger, Albertsons, Target):** [business-validation/features/onhand-beginning-reprocessing/](business-validation/features/onhand-beginning-reprocessing/feature-overview.md)
+
 ---
 
 ## Repository Structure

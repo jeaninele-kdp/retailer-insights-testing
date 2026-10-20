@@ -7,5 +7,6 @@ Completed and in-progress feature validations live under `features/`, structured
 | Feature | Path |
 |---------|------|
 | Dynamic On-Hand Inventory Logic | [features/dynamic-onhand-inventory-logic/](features/dynamic-onhand-inventory-logic/feature-overview.md) |
+| OnHandBeginning reprocessing (Kroger, Albertsons, Target) | [features/onhand-beginning-reprocessing/](features/onhand-beginning-reprocessing/feature-overview.md) |
 
 Each feature folder should include: overview, requirements, business rules, scenarios, test cases, traceability matrix, defects, validation summary, and `sql/` (scripts linked when available).
