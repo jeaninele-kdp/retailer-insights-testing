@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "retailer": "Walmart",
+  "domain": "purchase-order-source",
+  "rules": [
+    {
+      "id": "PO-001",
+      "name": "Purchase order number required",
+      "severity": "error",
+      "description": "Every purchase order record must include a non-empty purchase order number.",
+      "check": "required_non_empty",
+      "field": "purchaseOrderNumber"
+    },
+    {
+      "id": "PO-002",
+      "name": "Store identifier required",
+      "severity": "error",
+      "description": "Store (site) identifier is required for Walmart PO reconciliation.",
+      "check": "required_non_empty",
+      "field": "storeId"
+    },
+    {
+      "id": "PO-003",
+      "name": "Must-arrive date not before order date",
+      "severity": "error",
+      "description": "Must-arrive date must be on or after the order date.",
+      "check": "date_gte",
+      "field": "mustArriveByDate",
+      "compareField": "orderDate"
+    },
+    {
+      "id": "PO-004",
+      "name": "Cancelled PO has no open quantity",
+      "severity": "error",
+      "description": "When status is Cancelled, open order quantity must be zero on all lines.",
+      "check": "cancelled_zero_open_qty",
+      "field": "status"
+    },
+    {
+      "id": "PO-005",
+      "name": "Unique line keys within PO",
+      "severity": "error",
+      "description": "Line number and item identifier combination must be unique within the PO.",
+      "check": "unique_line_keys",
+      "field": "lines"
+    }
+  ]
+}

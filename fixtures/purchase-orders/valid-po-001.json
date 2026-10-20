@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "fixtureId": "valid-po-001",
+    "expectation": "pass",
+    "expectedRuleFailures": [],
+    "notes": "Happy-path source PO shape for Walmart acquisition validation."
+  },
+  "purchaseOrderNumber": "WM-PO-10004521",
+  "storeId": "1234",
+  "orderDate": "2026-10-01",
+  "mustArriveByDate": "2026-10-08",
+  "status": "Active",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "itemNumber": "012345678905",
+      "orderedQuantity": 24,
+      "openQuantity": 24
+    }
+  ]
+}

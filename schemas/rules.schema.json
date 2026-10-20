@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://retailer-insights-testing/schemas/rules.schema.json",
+  "title": "PO validation rule catalog",
+  "type": "object",
+  "required": ["version", "rules"],
+  "properties": {
+    "version": { "type": "string" },
+    "retailer": { "type": "string" },
+    "domain": { "type": "string" },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "severity", "check", "field"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "severity": { "enum": ["error", "warning"] },
+          "description": { "type": "string" },
+          "check": { "type": "string" },
+          "field": { "type": "string" },
+          "compareField": { "type": "string" }
+        }
+      }
+    }
+  }
+}

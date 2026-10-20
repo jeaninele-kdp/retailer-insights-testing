@@ -21,6 +21,15 @@ The goal is to reduce duplicate testing effort, improve coverage consistency, an
 
 ## Current Focus Areas
 
+### Walmart Purchase Order (Perfect Order lineage)
+
+Source PO validation, lineage investigations, and planned E2E coverage from acquisition through SOQ.
+
+- **Lineage guide:** `docs/walmart-po-lineage.md`
+- **Ecosystem context:** `docs/ecosystem-overview.md`
+- **Source rule catalog:** `validation/rules/rules.json` (run `python scripts/validate.py`)
+- **Traceability:** `docs/traceability-matrix.md`
+
 ### Dynamic On Hand
 Business validation and regression testing for inventory calculations, beginning inventory logic, and downstream impacts.
 
@@ -41,20 +50,18 @@ Regression validation following retailer data reprocessing activities.
 ## Repository Structure
 
 ```text
-test-cases/
-    Documented test scenarios and outcomes
-
-sql/
-    Validation and regression SQL queries
-
-requirements/
-    Business requirements and acceptance criteria
-
-learnings/
-    Testing discoveries, lessons learned, and edge cases
-
-evidence/
-    Validation results and supporting documentation
+docs/                 Ecosystem, lineage, traceability, scope
+test-cases/           Documented test scenarios and outcomes
+fixtures/             Source-shaped JSON samples (Walmart PO)
+validation/rules/     Business rule catalog (PO-*, ACQ-*, DOM-*, …)
+scripts/              Lightweight validators (validate.py)
+schemas/              JSON Schema for fixtures and rules
+queries/              Snowflake validation SQL (placeholders)
+investigations/       Production-style lineage write-ups
+sql/                  Alias / additional SQL (see queries/)
+requirements/         Business requirements and acceptance criteria
+learnings/            Testing discoveries, lessons learned, and edge cases
+evidence/             Validation results and supporting documentation
 ```
 
 ---

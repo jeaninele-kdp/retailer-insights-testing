@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "fixtureId": "invalid-missing-store",
+    "expectation": "fail",
+    "expectedRuleFailures": ["PO-002"]
+  },
+  "purchaseOrderNumber": "WM-PO-10004522",
+  "storeId": "",
+  "orderDate": "2026-10-01",
+  "mustArriveByDate": "2026-10-08",
+  "status": "Active",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "itemNumber": "012345678905",
+      "orderedQuantity": 12,
+      "openQuantity": 12
+    }
+  ]
+}

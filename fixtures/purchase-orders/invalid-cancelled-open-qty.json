@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "fixtureId": "invalid-cancelled-open-qty",
+    "expectation": "fail",
+    "expectedRuleFailures": ["PO-004"]
+  },
+  "purchaseOrderNumber": "WM-PO-10004524",
+  "storeId": "1234",
+  "orderDate": "2026-10-01",
+  "mustArriveByDate": "2026-10-08",
+  "status": "Cancelled",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "itemNumber": "012345678905",
+      "orderedQuantity": 12,
+      "openQuantity": 6
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "fixtureId": "invalid-duplicate-line",
+    "expectation": "fail",
+    "expectedRuleFailures": ["PO-005"]
+  },
+  "purchaseOrderNumber": "WM-PO-10004525",
+  "storeId": "1234",
+  "orderDate": "2026-10-01",
+  "mustArriveByDate": "2026-10-08",
+  "status": "Active",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "itemNumber": "012345678905",
+      "orderedQuantity": 12,
+      "openQuantity": 12
+    },
+    {
+      "lineNumber": 1,
+      "itemNumber": "012345678905",
+      "orderedQuantity": 6,
+      "openQuantity": 6
+    }
+  ]
+}

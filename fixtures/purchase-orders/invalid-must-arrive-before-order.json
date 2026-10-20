@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "fixtureId": "invalid-must-arrive-before-order",
+    "expectation": "fail",
+    "expectedRuleFailures": ["PO-003"]
+  },
+  "purchaseOrderNumber": "WM-PO-10004523",
+  "storeId": "1234",
+  "orderDate": "2026-10-10",
+  "mustArriveByDate": "2026-10-05",
+  "status": "Active",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "itemNumber": "012345678905",
+      "orderedQuantity": 12,
+      "openQuantity": 12
+    }
+  ]
+}
