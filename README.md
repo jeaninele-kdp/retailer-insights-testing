@@ -25,6 +25,7 @@ The goal is to reduce duplicate testing effort, improve coverage consistency, an
 
 Source PO validation, lineage investigations, and planned E2E coverage from acquisition through SOQ.
 
+- **Completed validation package:** [business-validation/features/walmart-purchase-order-data-validation/](business-validation/features/walmart-purchase-order-data-validation/feature-overview.md)
 - **Validation lifecycle:** `docs/business-validation-framework.md`
 - **Lineage guide:** `docs/walmart-po-lineage.md`
 - **Ecosystem context:** `docs/ecosystem-overview.md`
@@ -39,8 +40,12 @@ Business validation and regression testing for inventory calculations, beginning
 ### STM (Truck-to-Shelf)
 Validation of STM logic, calculations, and integration requirements.
 
+- **STM incremental capacity (in progress):** [business-validation/features/stm-incremental-capacity/](business-validation/features/stm-incremental-capacity/feature-overview.md)
+
 ### Incremental Capacity
 Testing and validation of incremental capacity calculations and business rules.
+
+See STM incremental capacity package above for confirmed Top7 / STM / promotion replacement rules and workshop scenarios.
 
 ### Ad Hoc Display
 Validation of display metrics, retailer submissions, and related calculations.
