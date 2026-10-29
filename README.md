@@ -45,7 +45,7 @@ Validation of STM logic, calculations, and integration requirements.
 ### Incremental Capacity
 Testing and validation of incremental capacity calculations and business rules.
 
-See STM incremental capacity package above for confirmed Top7 / STM / promotion replacement rules and workshop scenarios.
+- **NDT POG shelf capacity (10 chains):** [business-validation/features/ndt-pog-shelf-capacity/](business-validation/features/ndt-pog-shelf-capacity/feature-overview.md)
 
 ### Ad Hoc Display
 Validation of display metrics, retailer submissions, and related calculations.

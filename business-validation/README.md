@@ -10,5 +10,6 @@ Completed and in-progress feature validations live under `features/`, structured
 | OnHandBeginning reprocessing (Kroger, Albertsons, Target) | [features/onhand-beginning-reprocessing/](features/onhand-beginning-reprocessing/feature-overview.md) |
 | STM incremental capacity | [features/stm-incremental-capacity/](features/stm-incremental-capacity/feature-overview.md) |
 | Walmart purchase order data validation | [features/walmart-purchase-order-data-validation/](features/walmart-purchase-order-data-validation/feature-overview.md) |
+| NDT POG shelf capacity (Perfect Order) | [features/ndt-pog-shelf-capacity/](features/ndt-pog-shelf-capacity/feature-overview.md) |
 
 Each feature folder should include: overview, requirements, business rules, scenarios, test cases, traceability matrix, defects, validation summary, and `sql/` (scripts linked when available).
